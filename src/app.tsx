@@ -1,20 +1,35 @@
 import {Hero} from "./components/hero";
+import {Section} from "./components/section";
 
 export function App() {
   return (
     <>
       <Hero/>
-      <p>Hello Vite + Preact!</p>
-      <p>
-        <a
-          class="link"
-          href="https://preactjs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Preact
-        </a>
-      </p>
+      <Section imgSrc="https://images.unsplash.com/photo-1546182208-1e70985e2bf3" title="Blazingly fast setup" side="left">
+        <p>
+          Quick installation using npm: <code>npm install -g mpmgg</code>.
+          Setup by typing <code>mpm init</code> and selecting appropriate options.
+          Add plugins using <code>mpm add <i>plugin_name</i></code>.
+        </p>
+      </Section>
+      <Section imgSrc="https://images.unsplash.com/photo-1546182208-1e70985e2bf3" title="Easy plugin updates" side="right">
+        <p>
+          Update your plugins by simply typing <code>mpm update</code>.
+          Upgrade plugins (changes package.json) with <code>mpm upgrade</code>.
+        </p>
+      </Section>
+      <Section imgSrc="https://images.unsplash.com/photo-1546182208-1e70985e2bf3" title="Easy snapshots with Git" side="left">
+        <p>
+          Your server by default uses Git for version control.
+          It allows you to easily create snapshots, and backup your server to the remote repository.
+        </p>
+      </Section>
+      <Section imgSrc="https://images.unsplash.com/photo-1546182208-1e70985e2bf3" title="Fully open-source and transparent" side="right">
+        <p>
+          Everyone can check, fork, and contribute to mpm's code base, and to mpm's repository.
+          Checkout <a href="https://github.com/mbledkowski/mpm">GitHub - mpm</a> and <a href="https://github.com/mbledkowski/mpm_repository">GitHub - mpm_repository</a>
+        </p>
+      </Section>
     </>
   )
 }
