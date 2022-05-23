@@ -87,8 +87,8 @@ export default function Hero() {
       <div className="content">
         <h1>Minecraft Package Manager</h1>
         <div>
-          <a href="https://github.com/mbledkowski/mpm"><StyledDivButton className="github">GitHub</StyledDivButton></a>
-          <a href="https://github.com/mbledkowski/mpm/wiki"><StyledDivButton className="documentation">Documentation</StyledDivButton></a>
+          <a href="https://github.com/mpmgg/mpm"><StyledDivButton className="github">GitHub</StyledDivButton></a>
+          <a href="https://wiki.mpm.gg"><StyledDivButton className="documentation">Documentation</StyledDivButton></a>
         </div>
       </div>
     </HeroBox>
