@@ -26,6 +26,12 @@ const HeroBox = styled.div`
     margin: 2vw;
     width: min-content;
   }
+  > div > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
   @media (max-width: 800px) {
     flex-flow: column nowrap;
@@ -35,7 +41,7 @@ const HeroBox = styled.div`
   }
 `
 
-const StyledA = styled.a`
+const StyledDivButton = styled.div`
   background: #0d30d3;
   border: none;
   border-radius: clamp(.4rem, .8vw, .8rem);
@@ -50,6 +56,7 @@ const StyledA = styled.a`
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  width: fit-content;
   @media (max-width: 800px) {
     font-size: 1.5rem;
     padding: 1rem;
@@ -73,8 +80,10 @@ export default function Hero() {
       </div>
       <div>
         <h1>Minecraft Package Manager</h1>
-        <StyledA className="github" href="https://github.com/mbledkowski/mpm">GitHub</StyledA>
-        <StyledA className="documentation" href="https://github.com/mbledkowski/mpm/wiki">Documentation</StyledA>
+        <div>
+          <a href="https://github.com/mbledkowski/mpm"><StyledDivButton className="github">GitHub</StyledDivButton></a>
+          <a href="https://github.com/mbledkowski/mpm/wiki"><StyledDivButton className="documentation">Documentation</StyledDivButton></a>
+        </div>
       </div>
     </HeroBox>
   )
