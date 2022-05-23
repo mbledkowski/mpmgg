@@ -14,6 +14,7 @@ const HeroBox = styled.div`
   }
 
   .asciinema {
+    margin: 2rem;
     width: 40vw;
     min-height: 42vw;
     background: #121314;
@@ -26,11 +27,16 @@ const HeroBox = styled.div`
     margin: 2vw;
     width: min-content;
   }
-  > div.content > div {
+  > div.content {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    > div {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   @media (max-width: 800px) {

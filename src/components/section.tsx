@@ -5,10 +5,13 @@ export default function Section(props: { children: JSX.Element, imgSrc: string, 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-
     > .image {
+      max-width: 100vw;
       margin: 2rem;
       border-radius: 2rem;
+      @media (max-width: 480px) {
+        border-radius: 0;
+      }
     }
 
     > .text {
