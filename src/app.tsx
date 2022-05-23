@@ -1,9 +1,9 @@
-import { Logo } from './logo'
+import {Hero} from "./components/hero";
 
 export function App() {
   return (
     <>
-      <Logo />
+      <Hero/>
       <p>Hello Vite + Preact!</p>
       <p>
         <a
