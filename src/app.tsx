@@ -27,7 +27,7 @@ export function App() {
       <Section imgSrc="https://images.unsplash.com/photo-1481622254766-0f0a35bf6e77?fit=crop&w=480&h=340" title="Fully open-source and transparent" side="right">
         <p>
           Everyone can check, fork, and contribute to mpm's code base, and to mpm's repository.
-          Checkout <a href="https://github.com/mbledkowski/mpm">GitHub - mpm</a> and <a href="https://github.com/mbledkowski/mpm_repository">GitHub - mpm_repository</a>
+          Checkout <a href="https://github.com/mpmgg/mpm">mpm (GitHub)</a> and <a href="https://github.com/mpmgg/repository">repository (GitHub)</a>
         </p>
       </Section>
     </>
