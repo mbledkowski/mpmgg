@@ -35,7 +35,7 @@ export default function Section(props: { children: JSX.Element, imgSrc: string, 
           {props.children}
         </div>
         <img alt={props.title} className="image" src={props.imgSrc} />
-        ss      </StyledSection>
+      </StyledSection>
     )
   }
 }
