@@ -1,5 +1,5 @@
-import { Hero } from "./components/hero";
-import { Section } from "./components/section";
+import Hero from "./components/hero";
+import Section from "./components/section";
 
 export function App() {
   return (

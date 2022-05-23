@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export function Section(props: { children: JSX.Element, imgSrc: string, title: string, side: string }) {
+export default function Section(props: { children: JSX.Element, imgSrc: string, title: string, side: string }) {
   const StyledSection = styled.section`
     display: flex;
     flex-flow: row wrap;
@@ -25,7 +25,7 @@ export function Section(props: { children: JSX.Element, imgSrc: string, title: s
   if (props.side === "left") {
     return (
       <StyledSection>
-        <div className="image"/>
+        <div className="image" />
         <div className="text">
           <h2>{props.title}</h2>
           <p>{props.children}</p>
@@ -39,7 +39,7 @@ export function Section(props: { children: JSX.Element, imgSrc: string, title: s
           <h2>{props.title}</h2>
           {props.children}
         </div>
-        <div className="image"/>
+        <div className="image" />
       </StyledSection>
     )
   }

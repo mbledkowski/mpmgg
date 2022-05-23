@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {DummyButtons} from "./dummybuttons";
+import DummyButtons from "./dummybuttons";
 
 const HeroBox = styled.div`
   width: 100vw;
@@ -35,13 +35,13 @@ const HeroBox = styled.div`
   }
 `
 
-export function Hero() {
+export default function Hero() {
   return (
     <HeroBox>
       <div className="asciinema">
-        <DummyButtons/>
+        <DummyButtons />
         <script id="asciicast-335480" src="https://asciinema.org/a/335480.js" async data-autoplay="1" data-preload="1"
-                data-loop="1" data-columns="70" data-rows="35"></script>
+          data-loop="1" data-columns="70" data-rows="35"></script>
       </div>
       <h1>Minecraft Package Manager</h1>
     </HeroBox>
