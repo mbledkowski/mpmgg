@@ -26,7 +26,7 @@ const HeroBox = styled.div`
     margin: 2vw;
     width: min-content;
   }
-  > div > div {
+  > div.content > div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -78,7 +78,7 @@ export default function Hero() {
         <script id="asciicast-335480" src="https://asciinema.org/a/335480.js" async data-autoplay="1" data-preload="1"
           data-loop="1" data-columns="70" data-rows="35"></script>
       </div>
-      <div>
+      <div className="content">
         <h1>Minecraft Package Manager</h1>
         <div>
           <a href="https://github.com/mbledkowski/mpm"><StyledDivButton className="github">GitHub</StyledDivButton></a>
