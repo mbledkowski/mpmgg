@@ -8,11 +8,6 @@ export default function Section(props: { children: JSX.Element, imgSrc: string, 
 
     > .image {
       margin: 2rem;
-      background-image: url("${props.imgSrc}");
-      background-position: center;
-      background-size: cover;
-      height: 340px;
-      width: 480px;
       border-radius: 2rem;
     }
 
@@ -25,7 +20,7 @@ export default function Section(props: { children: JSX.Element, imgSrc: string, 
   if (props.side === "left") {
     return (
       <StyledSection>
-        <div className="image" />
+        <img alt={props.title} className="image" src={props.imgSrc} />
         <div className="text">
           <h2>{props.title}</h2>
           <p>{props.children}</p>
@@ -39,8 +34,8 @@ export default function Section(props: { children: JSX.Element, imgSrc: string, 
           <h2>{props.title}</h2>
           {props.children}
         </div>
-        <div className="image" />
-      </StyledSection>
+        <img alt={props.title} className="image" src={props.imgSrc} />
+        ss      </StyledSection>
     )
   }
 }
